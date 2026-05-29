@@ -8,6 +8,8 @@
     "userInterfaceStyle": "dark",
     "backgroundColor": "#0b0b16",
     "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
       "backgroundColor": "#0b0b16"
     },
     "android": {
@@ -24,7 +26,15 @@
     "plugins": [
       "expo-router",
       "expo-system-ui",
-      "expo-navigation-bar"
+      "expo-navigation-bar",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#0b0b16"
+        }
+      ]
     ],
     "scheme": "pixelstories",
     "experiments": {
