@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Pixel Stories",
+    "slug": "pixel-stories",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0b0b16",
+    "splash": {
+      "backgroundColor": "#0b0b16"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0b0b16"
+      },
+      "package": "com.pixelstories.app",
+      "permissions": ["android.permission.INTERNET"],
+      "softwareKeyboardLayoutMode": "pan"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-system-ui",
+      "expo-navigation-bar"
+    ],
+    "scheme": "pixelstories",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

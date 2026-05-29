@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-webview/index.js b/node_modules/react-native-webview/index.js
+index 55a1a38..a3b6dbf 100644
+--- a/node_modules/react-native-webview/index.js
++++ b/node_modules/react-native-webview/index.js
+@@ -1,4 +1,4 @@
+-import WebView from './lib/WebView';
+-
+-export { WebView };
+-export default WebView;
++'use strict';
++// Patched: root index.js used ESM syntax without explicit extensions, which
++// fails under Node.js v22+ ESM auto-detection. Delegate to the compiled CJS build.
++module.exports = require('./lib/index.js');
