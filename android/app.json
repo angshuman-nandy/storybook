@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Pixel Stories",
-    "slug": "pixel-stories",
+    "slug": "storybook",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,7 +16,9 @@
         "backgroundColor": "#0b0b16"
       },
       "package": "com.pixelstories.app",
-      "permissions": ["android.permission.INTERNET"],
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
       "softwareKeyboardLayoutMode": "pan"
     },
     "plugins": [
@@ -27,6 +29,14 @@
     "scheme": "pixelstories",
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "expo-navigation-bar": {},
+      "eas": {
+        "projectId": "4a474a1e-b207-4d84-ad49-0142e7133b8d"
+      }
+    },
+    "owner": "angshumann"
   }
 }
